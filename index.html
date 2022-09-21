@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/reducido.css" />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-8 col-sm-10 col-lg-10">
+          <div class="card rounded-4 p-3">
+            <div class="card-img container-fluid pt-3">
+              <img
+                src="images/image-equilibrium.jpg"
+                alt="Cubo"
+                class="img-cubo img-fluid rounded-4"
+              />
+            </div>
+            <a class="title-text m-3 text-light" href="#">Equilibrium #3429</a>
+            <p class="mx-3 soft-blue">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div class="eth-left d-flex align-items-center">
+              <p class="ms-3 mb-3 cyan flex-grow-1">
+                <img
+                  src="images/icon-ethereum.svg"
+                  class="me-1"
+                  alt="Icono Etereum"
+                />
+                0.041 ETH
+              </p>
+              <p class="soft-blue me-3 mb-3">
+                <img
+                  src="images/icon-clock.svg"
+                  class="me-1"
+                  alt="Imagen reloj"
+                />
+                3 days left
+              </p>
+            </div>
+            <hr class="line mx-3 my-0" />
+            <div class="footer-card d-flex m-3 align-items-center">
+              <img
+                src="images/image-avatar.png"
+                alt="Imagen avatar"
+                class="avatar-img border border-light border-2 rounded-circle"
+              />
+              <div class="text-footer d-flex">
+                <p class="my-3 ms-3 soft-blue">Creation of</p>
+                <a class="text-name mt-3 ms-1" href="#">Jules Wyvern</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
