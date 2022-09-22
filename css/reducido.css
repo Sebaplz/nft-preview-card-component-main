@@ -49,9 +49,16 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -120,7 +127,8 @@ a:hover {
   color: var(--bs-link-hover-color);
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -191,27 +199,27 @@ svg {
 }
 
 @media (min-width: 576px) {
-   .container {
+  .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-   .container {
+  .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-   .container {
+  .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-   .container {
+  .container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-   .container {
+  .container {
     max-width: 1320px;
   }
 }
@@ -393,14 +401,14 @@ svg {
 @-webkit-keyframes placeholder-wave {
   100% {
     -webkit-mask-position: -200% 0%;
-            mask-position: -200% 0%;
+    mask-position: -200% 0%;
   }
 }
 
 @keyframes placeholder-wave {
   100% {
     -webkit-mask-position: -200% 0%;
-            mask-position: -200% 0%;
+    mask-position: -200% 0%;
   }
 }
 
@@ -515,7 +523,12 @@ body {
 .title-text {
   font-weight: 600;
   font-size: 2rem;
-  text-decoration: none;
+  color: white;
+}
+
+.title-text:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .card {
@@ -569,7 +582,7 @@ a:hover {
   height: auto;
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .div-ojo {
