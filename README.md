@@ -3,8 +3,8 @@
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/Sebaplz/nft-preview-card-component-main
+- Live Site URL: https://sebaplz.github.io/nft-preview-card-component-main/
 
 
 Web width 1440px:
